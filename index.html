@@ -43,7 +43,7 @@ body {
 }
 
 /*
-This part is the top navigation bar.
+This part is the horizontal navigation bar.
 The computer thinks of it as an unordered list
 (i.e. a list of items without bullets or outline numbers).
 */
@@ -69,10 +69,9 @@ li {
   float: left;
 }
 /*
-This creates an inline list class.
-("hnav" for horizontal navigation bar)
+This creates an inline list attribute.
 */
-li hnav {
+li a {
   /*
   Blocking treats each item as a separate unit
   (vs. inlining, which treats each item as part of the same unit)
@@ -85,6 +84,10 @@ li hnav {
   This makes the font "Courier" and white.
   */
   font-family:Courier;
+  /*
+  This un-underlines links.
+  */
+  text-decoration: none;
   color: #FFFFFF;
   text-align: left;
   padding: 15px 15px;
@@ -93,7 +96,7 @@ li hnav {
 This applies a hover attribute to the inline list class.
 (Hover = when the cursor is resting on something)
 */
-li hnav:hover {
+li a:hover {
   /*
   This places a background color, violet, behind applicable text.
   */
@@ -167,18 +170,18 @@ This is the beginning of the list of items in the horizontal navigation bar.
   Note that we only have to initiate the inline list class
   in the first line and can shorthand a bit thereafter.
   -->
-  <li><hnav class="active" href="https://en.wikipedia.org/wiki/Home">Home</a></li>
-  <li><hnav href="https://en.wikipedia.org/wiki/About">About</a></li>
-  <li><hnav href="https://en.wikipedia.org/wiki/Portfolio">Portfolio</a></li>
-  <li><hnav href="https://en.wikipedia.org/wiki/Blog">Blog</a></li>
-  <li><hnav href="https://en.wikipedia.org/wiki/Contact">Contact</a></li>
-  <li><hnav href="https://en.wikipedia.org/wiki/Resources">Resources</a></li>
-  <li><hnav href="https://en.wikipedia.org/wiki/Services">Services</a></li>
-  <li><hnav href="https://en.wikipedia.org/wiki/Tools">Tools</a></li>
-  <li><hnav href="https://en.wikipedia.org/wiki/Support">Support</a></li>
-  <li><hnav href="https://en.wikipedia.org/wiki/Testimonials">Testimonials</a></li>
-  <li><hnav href="https://en.wikipedia.org/wiki/Shop">Shop</a></li>
-  <li><hnav href="https://en.wikipedia.org/wiki/Login">Login</a></li>
+  <li><a class="active" href="https://en.wikipedia.org/wiki/Home">Home</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/About">About</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Portfolio">Portfolio</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Blog">Blog</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Contact">Contact</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Resources">Resources</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Services">Services</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Tools">Tools</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Support">Support</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Testimonials">Testimonials</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Shop">Shop</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Login">Login</a></li>
 
 <!--
 This is where, in the heading,
