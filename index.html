@@ -1,23 +1,116 @@
 <!--
-This is a website.
+This is an html website.
+This part tells the browser
+which programming language and dialect
+this page is written in so it can read it
+(or at least which language it starts in).
+In this case, we used HTML 5.
+(Other dialects use much longer declarations.)
 -->
 <!DOCTYPE html>
+
 <!--
 This part is written in HTML.
 You can tell because of the angle brackets
 a.k.a. chevrons (https://en.wikipedia.org/wiki/Bracket)
 a.k.a. (non-julienned) carrots
+........ METADATA ........
+We put all our metadata before the content (body).
+Metadata is stuff that doesn't actually show up
+but is more informational.
+
+In the HTML 5 standard, the following tags can be omitted:
+  <html> is used to better define the document root
+  <head>
+  <body>
+But it is good practice to keep them for compatibility purposes.
+Additional metadata tags:
+  <title> is used to name the browser tab, per se
+  <meta> is used for assorted behind-the-scenes information
+  <base> is used for establishing defaults for your site
+  <style> is used for Cascading Style Sheets (CSS)
+  <script> is used for JavaScript (not to be confused with Java)
+  <link> is used to reference an external source
+    (e.g. a style sheet located somewhere else)
+
+Instead of simply putting down the <html> tag,
+Let's take advantage of the opportunity to add purpose;
+Let's also establish the page language as US-English.
 -->
-<html>
+<html lang="en-US">
+
 <!--
-This part is the heading.
+This part is the head of the webpage.
+It is a required component and should only be used once.
+It is always paired with and before the body.
+We can think of it like the cover of a book
+including the pages with the publishing information,
+disclosures, dedications, bar codes, etc.
 -->
 <head>
-<title>Page Title</title>
+
+  <!--
+  This is the name of the webpage.
+  It will show up on the browser tab
+  (looks like the label on a file folder).
+  It will show up as the default name
+  if the user tries to bookmark the page
+  so make it a good one!
+  -->
+  <title>The Janning | Home</title>
+
+  <!--
+  This is where we put keywords.
+  These make it easier for this webpage to pull up
+  when the keywords are entered into a search engine.
+  -->
+  <meta name="keywords" content="Janning, learning, html, CSS">
+
+  <!--
+  This is where we give credit to the person who built this webpage.
+  -->
+  <meta name="author" content="Janning Chow"
+
+  <!--
+  This is where we add a little blurb or summary
+  about the contents of the webpage.
+  -->
+  <meta name="description" content="
+    This is the experimental website
+    for Janning to learn and practice
+    front-end development (html & CSS).
+  ">
+
+  <!--
+  This is where we can designate how frequently
+  the web browser re-loads the webpage.
+  Since we have no use for it right now,
+  we can keep it in the comments.
+
+  <meta http-equiv="refresh" content="300">
+  -->
+
+  <!--
+  This is where we can designate the site address
+  (all the pages are attached after the slash).
+  Browsers that read HTML5 won't need this spelled out explicitly.
+  Since we want Atom to be able to read this,
+  we can keep it in the comments for now.
+
+  <base href="http://janning.gitbub.io/">
+  -->
+
+  <!--
+  This is where we can designate what happens when the user clicks a link.
+  -->
+
 <!--
 This part is the style sheet (template).
+........ STYLE SHEETS / TEMPLATES ........
+
 -->
 <style>
+
 /*
 This part is written in CSS.
 You can tell because of the curly brackets
@@ -39,15 +132,28 @@ body {
   but it is safer to use the entire URL
   (in case the appropriate context isn't maintained).
   */
-  background: url("http://janning.github.io/Background Image - Dark Stage.jpg") repeat-x left top;
+  background: url("http://janning.github.io/Background_Image_-_Dark_Stage.jpg")
+  repeat-x left top;
 }
 
 /*
+........PART ZERO........
+This part establishes defaults.
+This way, values can be swapped easily and consistently throughout.
+*/
+
+.default_margin {margin: 15px}
+.default_padding {padding: 15px}
+
+/*
+........PART ONE........
 This part is the horizontal navigation bar.
 The computer thinks of it as an unordered list
 (i.e. a list of items without bullets or outline numbers).
+Creates new class: h_navbar
+(horizontal navigation bar)
 */
-ul {
+ul.h_navbar {
   /*
   Un-bullets the list.
   Gives everything some breathing room.
@@ -106,6 +212,7 @@ li a:hover {
 /*
 This part is the level 1 heading.
 */
+
 h1 {
   /*
   This makes the font "Courier" and dark violet.
@@ -153,19 +260,26 @@ p a:visited {
 This is the end of the style sheet.
 */
 </style>
+
+<!--
+This part has the interactive stuff (client-side).
+-->
+<script>
+</script>
+
 <!--
 This is the end of the heading.
 -->
 </head>
 <!--
-This is the end of the body.
+This is the beginning of the body.
 -->
 <body>
 
 <!--
 This is the beginning of the list of items in the horizontal navigation bar.
 -->
-<ul>
+<ul class="h_navbar">
   <!--
   Note that we only have to initiate the attritube class
   in the first line and can cut to the chase thereafter.
@@ -182,7 +296,10 @@ This is the beginning of the list of items in the horizontal navigation bar.
   <li><a href="https://en.wikipedia.org/wiki/Testimonials">Testimonials</a></li>
   <li><a href="https://en.wikipedia.org/wiki/Shop">Shop</a></li>
   <li><a href="https://en.wikipedia.org/wiki/Login">Login</a></li>
-
+  <!--
+  CSS Counters (display: none)
+  -->
+</ul>
 <!--
 This is where, in the heading,
 we add an attribute
@@ -192,6 +309,7 @@ and the link spans across the designated character(s).
 In this case,
 "Hello!"
 -->
+</br>
 <h1><a href="https://en.wikipedia.org/wiki/Hello">Hello!</a></h1>
 <!--
 This is where we put the contents of the paragraph
@@ -283,5 +401,5 @@ x - Implement background image
   - Incorporate Color.Blocks and 12 links
     into the banner/ribbon
   - Learn about hover menus
-  - Learn about login screens
+  - Learn about login screens (CSS Forms)
 -->
