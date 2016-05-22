@@ -5,8 +5,11 @@ title: README (janning.github.io)
 pages.github.com
 
 --------------------------------------------------------------------------------
-INTRO
+
+## INTRO
+
 --------------------------------------------------------------------------------
+
 [janning.github.io](http://janning.github.io) currently has no actual content
 as I'm using this as a front to learn HTML & CSS,
 but feel free to peek into the code if you wish.
@@ -17,8 +20,11 @@ you can use either of the following keyboard shortcuts:
 Ctrl+U or Ctrl+Shift+I
 
 --------------------------------------------------------------------------------
-HOW TO START YOUR OWN PROJECT (WEBSITE)
+
+## HOW TO START YOUR OWN PROJECT (WEBSITE)
+
 --------------------------------------------------------------------------------
+
 1. Decide on a website name. <br>
     (Since I don't know what you picked, <br>
     I'm going to pretend you named it after yourself <br>
@@ -28,9 +34,13 @@ HOW TO START YOUR OWN PROJECT (WEBSITE)
 4. Create a new file named index.html.
 5. Put some html in it.
 6. Go to user-name.github.io to view the results.
+
 --------------------------------------------------------------------------------
-HOW TO MAKE MAKING A WEBSITE EASIER
+
+## HOW TO MAKE MAKING A WEBSITE EASIER
+
 --------------------------------------------------------------------------------
+
 1. If using Linux, install git (duh).  If using Windows or Mac, get [GitHub Desktop](https://desktop.github.com).
 2. Get a text editor, e.g.:
   * [Vim](http://www.vim.org)
@@ -40,9 +50,13 @@ HOW TO MAKE MAKING A WEBSITE EASIER
   * [Emacs](https://www.gnu.org/software/emacs/) <br>
   ... In no particular order.
 3. If available in your text editor, turn on html previewing.
+
 --------------------------------------------------------------------------------
-SAMPLE WORK FLOW
+
+## SAMPLE WORK FLOW
+
 --------------------------------------------------------------------------------
+
 1. Pull up text editor.
 2. Pull up file and previewing.
 3. Code.
@@ -53,7 +67,11 @@ SAMPLE WORK FLOW
 8. Commit to Master (lower left).
 9. Sync (upper right).
 10.
+
 --------------------------------------------------------------------------------
-WHERE TO LEARN STUFF ABOUT MAKING WEBSITES
+
+## WHERE TO LEARN STUFF ABOUT MAKING WEBSITES
+
 --------------------------------------------------------------------------------
+
 1. Poke around [w3schools](http://www.w3schools.com).
