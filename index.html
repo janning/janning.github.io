@@ -97,12 +97,16 @@ disclosures, dedications, bar codes, etc.
   Since we want Atom to be able to read this,
   we can keep it in the comments for now.
 
-  <base href="http://janning.gitbub.io/">
+  <base href="http://janning.github.io/">
   -->
 
   <!--
   This is where we can designate what happens when the user clicks a link.
+  In this case, it will load in place of what is currently showing
+  (i.e. in the same window/tab, vs. in a separate window/tab).
+  Browsers that read HTML5 won't need this spelled out explicitly.
   -->
+  <base target="_self" href="http://janning.github.io/">
 
 <!--
 This part is the style sheet (template).
@@ -128,7 +132,7 @@ body {
   This puts a background image in the top left corner,
   repeats it horizontally (a.k.a. along the x-axis).
   The full URL doesn't have to be used here
-  (i.e. http://janning.gitbub.io/ can be left off)
+  (i.e. http://janning.github.io/ can be left off)
   but it is safer to use the entire URL
   (in case the appropriate context isn't maintained).
   */
