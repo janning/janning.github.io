@@ -1,3 +1,6 @@
+---
+title: README (janning.github.io)
+---
 # janning.github.io
 pages.github.com
 
@@ -37,3 +40,20 @@ HOW TO MAKE MAKING A WEBSITE EASIER
   * [Emacs](https://www.gnu.org/software/emacs/) <br>
   ... In no particular order.
 3. If available in your text editor, turn on html previewing.
+--------------------------------------------------------------------------------
+SAMPLE WORK FLOW
+--------------------------------------------------------------------------------
+1. Pull up text editor.
+2. Pull up file and previewing.
+3. Code.
+4. Save often.
+5. Pull up GitHub Desktop.
+6. View Changes (top center, next to History).
+7. Type succinct Summary and Description (something useful).
+8. Commit to Master (lower left).
+9. Sync (upper right).
+10.
+--------------------------------------------------------------------------------
+WHERE TO LEARN STUFF ABOUT MAKING WEBSITES
+--------------------------------------------------------------------------------
+1. Poke around [w3schools](http://www.w3schools.com).
